@@ -41,6 +41,7 @@ public class unityCharacterMovement : MonoBehaviour
     {   
         speed=speed*Time.deltaTime;
         if(step<stepAmount){
+	//Move Forward
         if(stepDetails.Substring(1,3) == "for"){
         velocity= new Vector3(0, gravity * Time.deltaTime, speedMulti*speed);
         controller.Move(velocity);
@@ -49,7 +50,7 @@ public class unityCharacterMovement : MonoBehaviour
         stepReset();
         }
         }	
-	//Move Left
+	//Move Back
         else if(stepDetails.Substring(1,3) == "bac"){
         	velocity= new Vector3(0, gravity * Time.deltaTime, -speed*speedMulti);
         	controller.Move(velocity);
