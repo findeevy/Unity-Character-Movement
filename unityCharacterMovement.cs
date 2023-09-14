@@ -30,9 +30,9 @@ public class unityCharacterMovement : MonoBehaviour
         placeX = controller.transform.position.x;
         placeY = controller.transform.position.y;
         placeZ = controller.transform.position.z;
-        rotateX = controller.transform.rotation.x;
-        rotateY = controller.transform.rotation.y;
-        rotateZ = controller.transform.rotation.z;
+        rotateX = controller.transform.rotation.eulerAngles.x;
+        rotateY = controller.transform.rotation.eulerAngles.y;
+        rotateZ = controller.transform.rotation.eulerAngles.z;
         
 
     }
