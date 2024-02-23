@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+///Written by Fin Deevy
+///Last updated 2024
+///For use with the Unity engine, orthogonal character movement scripting.
+
 public class unityCharacterMovement : MonoBehaviour
 {
     public List<string> movements = new List<string> { };
